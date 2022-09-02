@@ -1,0 +1,16 @@
+.bio {
+  padding-left: 70px;
+}
+
+.bio__name {
+  margin: 20px 0;
+}
+.bio__text {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.bio__text:last-child {
+  margin-bottom: 20px;
+}

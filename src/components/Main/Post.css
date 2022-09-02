@@ -1,0 +1,16 @@
+.post {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  margin-top: 20px;
+  background-color: #181818;
+}
+.post__profile-image {
+  display: block;
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 20px;
+}
+.post__text {
+  margin: 0;
+}

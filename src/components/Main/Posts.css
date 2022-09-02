@@ -1,0 +1,29 @@
+.profile__posts {
+  padding: 1px 50px 50px;
+  color: aliceblue;
+  background-color: #202020;
+}
+
+.posts__textfield {
+  height: 150px;
+  background-color: #181818;
+  box-sizing: border-box;
+  border: 1px solid rgb(40, 40, 40);
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #fff;
+  outline: none;
+  width: 100%;
+}
+
+.posts__btn {
+  background-color: #181818;
+  color: aliceblue;
+  outline: none;
+  border: none;
+  background-color: #181818;
+  border: 1px solid rgb(40, 40, 40);
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}

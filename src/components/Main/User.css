@@ -1,0 +1,7 @@
+.user {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: aliceblue;
+  background-color: #202020;
+}
