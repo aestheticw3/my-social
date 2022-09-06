@@ -1,6 +1,7 @@
 .post {
   display: flex;
   align-items: center;
+  position: relative;
   padding: 15px 20px;
   margin-top: 20px;
   background-color: #181818;
@@ -13,4 +14,13 @@
 }
 .text {
   margin: 0;
+}
+
+.likesCounter {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0 5px 5px 0;
+  font-size: 0.8rem;
+  color: green;
 }

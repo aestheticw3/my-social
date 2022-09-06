@@ -1,9 +1,9 @@
 import styles from "./Bio.module.css";
 
-function Bio() {
+function Bio(props) {
   return (
     <div className={styles.bio}>
-      <h1 className={styles.name}>Aleksey Kostylev</h1>
+      <h1 className={styles.name}>{props.name}</h1>
       <p className={styles.item}>Date of Birth: 7 April</p>
       <p className={styles.item}>City: Minsk</p>
       <p className={styles.item}>Education: Garward</p>

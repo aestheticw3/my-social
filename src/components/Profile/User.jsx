@@ -6,7 +6,7 @@ function User() {
   return (
     <div className={styles.user}>
       <UserImage />
-      <Bio />
+      <Bio name="Aleksey Kostylev" />
     </div>
   );
 }

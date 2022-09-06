@@ -1,5 +1,5 @@
 import styles from "./Post.module.css";
-function Post() {
+function Post(props) {
   return (
     <div className={styles.post}>
       <img
@@ -7,7 +7,8 @@ function Post() {
         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
         alt="profile"
       />
-      <p className={styles.text}>BlaBlaBla</p>
+      <p className={styles.text}>{props.message}</p>
+      <div className={styles.likesCounter}>{props.likesCounter}</div>
     </div>
   );
 }
