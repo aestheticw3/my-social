@@ -1,9 +1,9 @@
-import "./Search.css";
+import styles from "./Search.module.css";
 
 function Search() {
   return (
     <input
-      className="header__search"
+      className={styles.search}
       type="text"
       autocapitalize="none"
       autocomplete="off"

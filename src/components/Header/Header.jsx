@@ -1,18 +1,18 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 import ProfileIcon from "./ProfileIcon";
-import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 import Search from "./Search";
 import Logo from "./Logo";
 
 function Header() {
   return (
-    <header className="header">
-      <div className="header__top">
+    <header className={styles.header}>
+      <div className={styles.top}>
         <Logo />
         <Search />
         <ProfileIcon />
       </div>
-      <Sidebar />
+      <Navbar />
     </header>
   );
 }

@@ -1,13 +1,13 @@
-import "./Post.css";
+import styles from "./Post.module.css";
 function Post() {
   return (
-    <div className="post">
+    <div className={styles.post}>
       <img
-        className="post__profile-image"
+        className={styles.logo}
         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
         alt="profile"
       />
-      <p className="post__text">BlaBlaBla</p>
+      <p className={styles.text}>BlaBlaBla</p>
     </div>
   );
 }

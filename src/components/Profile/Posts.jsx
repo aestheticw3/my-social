@@ -1,12 +1,12 @@
-import "./Posts.css";
+import styles from "./Posts.module.css";
 import Post from "./Post";
 
 function Posts() {
   return (
-    <div className="profile__posts posts">
-      <h2 className="posts__title">My Posts</h2>
+    <div className={styles.posts}>
+      <h2 className={styles.title}>My Posts</h2>
       <textarea
-        className="posts__textfield"
+        className={styles.textfield}
         placeholder="Your News..."
         type="text"
         autocapitalize="none"
@@ -16,7 +16,7 @@ function Posts() {
         tabindex="0"
         spellcheck="false"
       ></textarea>
-      <button className="posts__btn">Send</button>
+      <button className={styles.btn}>Send</button>
       <Post />
     </div>
   );

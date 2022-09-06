@@ -1,10 +1,10 @@
-.profile__posts {
+.posts {
   padding: 1px 50px 50px;
   color: aliceblue;
   background-color: #202020;
 }
 
-.posts__textfield {
+.textfield {
   height: 150px;
   background-color: #181818;
   box-sizing: border-box;
@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.posts__btn {
+.btn {
   background-color: #181818;
   color: aliceblue;
   outline: none;
@@ -26,4 +26,8 @@
   padding: 10px 20px;
   font-weight: bold;
   margin-top: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
 }

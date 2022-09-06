@@ -5,12 +5,8 @@
   box-sizing: border-box;
 }
 
-.header__top {
+.top {
   display: flex;
   justify-content: space-between;
   padding: 15px 50px;
-}
-
-.header__logo {
-  width: 40px;
 }

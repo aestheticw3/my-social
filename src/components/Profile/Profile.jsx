@@ -1,10 +1,10 @@
 import User from "./User";
 import Posts from "./Posts";
-import "./Profile.css";
+import styles from "./Profile.module.css";
 
 function Profile() {
   return (
-    <div className="profile">
+    <div className={styles.profile}>
       <User />
       <Posts />
     </div>

@@ -1,10 +1,10 @@
 import UserImage from "./UserImage";
-import "./User.css";
+import styles from "./User.module.css";
 import Bio from "./Bio";
 
 function User() {
   return (
-    <div className="user">
+    <div className={styles.user}>
       <UserImage />
       <Bio />
     </div>
