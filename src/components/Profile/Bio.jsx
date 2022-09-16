@@ -1,6 +1,6 @@
 import styles from "./Bio.module.css";
 
-function Bio(props) {
+const Bio = (props) => {
   return (
     <div className={styles.bio}>
       <h1 className={styles.name}>{props.name}</h1>
@@ -10,6 +10,5 @@ function Bio(props) {
       <p className={styles.item}>Web-Site: https://google.com</p>
     </div>
   );
-}
-
+};
 export default Bio;

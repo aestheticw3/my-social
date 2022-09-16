@@ -1,5 +1,6 @@
 import styles from "./Post.module.css";
-function Post(props) {
+
+const Post = (props) => {
   return (
     <div className={styles.post}>
       <img
@@ -11,6 +12,5 @@ function Post(props) {
       <div className={styles.likesCounter}>{props.likesCounter}</div>
     </div>
   );
-}
-
+};
 export default Post;

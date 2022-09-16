@@ -1,6 +1,6 @@
 import styles from "./UserImage.module.css";
 
-function UserImage() {
+const UserImage = () => {
   return (
     <img
       className={styles.logo}
@@ -8,6 +8,5 @@ function UserImage() {
       alt="profile"
     />
   );
-}
-
+};
 export default UserImage;

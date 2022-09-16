@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Search from "./Search";
 import Logo from "./Logo";
 
-function Header() {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.top}>
@@ -15,6 +15,6 @@ function Header() {
       <Navbar />
     </header>
   );
-}
+};
 
 export default Header;

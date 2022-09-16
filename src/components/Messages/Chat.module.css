@@ -1,0 +1,8 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  padding: 2% 3%;
+  background-color: #202020;
+  border: 1px solid rgb(40, 40, 40);
+}

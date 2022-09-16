@@ -1,6 +1,7 @@
 .main {
   position: relative;
   box-sizing: border-box;
+  padding: 3% 0;
 }
 
 .container {

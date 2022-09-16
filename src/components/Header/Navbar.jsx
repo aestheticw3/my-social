@@ -2,7 +2,8 @@ import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-function Navbar() {
+
+const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <Link to="/" className={`${styles.link} ${styles.active}`}>
@@ -22,6 +23,6 @@ function Navbar() {
       </Link>
     </nav>
   );
-}
+};
 
 export default Navbar;

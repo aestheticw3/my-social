@@ -1,7 +1,14 @@
+import Chat from "./Chat";
+import Chats from "./Chats";
 import styles from "./Messages.module.css";
 
-function Messages() {
-  return <div>Here will be your messages</div>;
-}
+const Messages = () => {
+  return (
+    <div className={styles.messages}>
+      <Chats />
+      <Chat />
+    </div>
+  );
+};
 
 export default Messages;

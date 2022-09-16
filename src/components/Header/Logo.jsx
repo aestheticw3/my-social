@@ -1,5 +1,6 @@
 import styles from "./Logo.module.css";
-function Logo() {
+
+const Logo = () => {
   return (
     <img
       className={styles.logo}
@@ -7,6 +8,6 @@ function Logo() {
       alt="logo"
     />
   );
-}
+};
 
 export default Logo;

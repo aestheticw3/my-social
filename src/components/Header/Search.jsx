@@ -1,6 +1,6 @@
 import styles from "./Search.module.css";
 
-function Search() {
+const Search = () => {
   return (
     <input
       className={styles.search}
@@ -14,6 +14,6 @@ function Search() {
       placeholder="Search"
     />
   );
-}
+};
 
 export default Search;

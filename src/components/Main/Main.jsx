@@ -3,7 +3,7 @@ import Profile from "../Profile/Profile";
 import Messages from "../Messages/Messages";
 import styles from "./Main.module.css";
 
-function Main() {
+const Main = () => {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -14,6 +14,5 @@ function Main() {
       </div>
     </main>
   );
-}
-
+};
 export default Main;

@@ -1,7 +1,7 @@
 import styles from "./Posts.module.css";
 import Post from "./Post";
 
-function Posts() {
+const Posts = () => {
   return (
     <div className={styles.posts}>
       <h2 className={styles.title}>My Posts</h2>
@@ -37,6 +37,5 @@ function Posts() {
       <Post message="speaking of" likesCounter="1" />
     </div>
   );
-}
-
+};
 export default Posts;

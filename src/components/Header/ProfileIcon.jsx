@@ -1,6 +1,6 @@
 import styles from "./ProfileIcon.module.css";
 
-function ProfileIcon() {
+const ProfileIcon = () => {
   return (
     <img
       className={styles.logo}
@@ -8,6 +8,5 @@ function ProfileIcon() {
       alt="profile icon"
     />
   );
-}
-
+};
 export default ProfileIcon;
