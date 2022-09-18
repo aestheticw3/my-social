@@ -1,4 +1,7 @@
 .chatsUser {
+  display: block;
+  color: #fff;
+  text-decoration: none;
   padding: 5%;
   border-top: 1px solid rgb(40, 40, 40);
   border-left: 1px solid rgb(40, 40, 40);

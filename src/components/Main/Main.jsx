@@ -9,7 +9,7 @@ const Main = () => {
       <div className={styles.container}>
         <Routes>
           <Route path="/" element={<Profile />} />
-          <Route path="/messages" element={<Messages />} />
+          <Route path="/messages/*" element={<Messages />} />
         </Routes>
       </div>
     </main>
