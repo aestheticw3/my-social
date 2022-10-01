@@ -1,10 +1,9 @@
 .main {
-  position: relative;
-  box-sizing: border-box;
   padding: 3% 0;
 }
 
 .container {
   max-width: calc(90% + 10px);
   margin: 0 auto;
+  background-color: #202020;
 }

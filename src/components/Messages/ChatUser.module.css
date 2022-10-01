@@ -1,4 +1,4 @@
-.chatsUser {
+.chatUser {
   display: block;
   color: #fff;
   text-decoration: none;
@@ -7,6 +7,6 @@
   border-left: 1px solid rgb(40, 40, 40);
 }
 
-.chatsUser:last-child {
+.chatUser:last-child {
   border-bottom: 1px solid rgb(40, 40, 40);
 }

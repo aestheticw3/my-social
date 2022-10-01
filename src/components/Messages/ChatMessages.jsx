@@ -1,9 +1,9 @@
-import styles from "./Chat.module.css";
+import styles from "./ChatMessages.module.css";
 import ChatMessage from "./ChatMessage";
 
-const Chat = () => {
+const ChatMessages = () => {
   return (
-    <div className={styles.chat}>
+    <div className={styles.chatMessages}>
       <ChatMessage message="First message" />
       <ChatMessage message="Second message" />
       <ChatMessage message="Third message" />
@@ -11,4 +11,4 @@ const Chat = () => {
     </div>
   );
 };
-export default Chat;
+export default ChatMessages;

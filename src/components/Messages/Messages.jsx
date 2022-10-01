@@ -1,12 +1,12 @@
-import Chat from "./Chat";
-import Chats from "./Chats";
+import ChatMessages from "./ChatMessages";
+import ChatUsers from "./ChatUsers";
 import styles from "./Messages.module.css";
 
 const Messages = () => {
   return (
     <div className={styles.messages}>
-      <Chats />
-      <Chat />
+      <ChatUsers />
+      <ChatMessages />
     </div>
   );
 };
