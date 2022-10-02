@@ -2,6 +2,25 @@ import styles from "./Posts.module.css";
 import Post from "./Post";
 
 const Posts = () => {
+  let postsData = [
+    {
+      text: "i get these people are friends of the devs but jesus",
+      likes: 121,
+    },
+    {
+      text: "9221 hours: bad game, there's no real late game content",
+      likes: 12,
+    },
+    { text: "i would have never guessed heap for this problem lol", likes: 14 },
+    { text: "but pooh, gotta be 1st to review it", likes: 14 },
+    { text: "i wonder if my friend's ex's game is for sale", likes: 21 },
+    { text: "speaking of", likes: 10 },
+  ];
+
+  let postsElements = postsData.map((post) => (
+    <Post text={post.text} likes={post.likes} />
+  ));
+
   return (
     <div className={styles.posts}>
       <h2 className={styles.title}>My Posts</h2>
@@ -17,24 +36,7 @@ const Posts = () => {
         spellcheck="false"
       ></textarea>
       <button className={styles.btn}>Send</button>
-      <Post
-        message="i get these people are friends of the devs but jesus"
-        likesCounter="12"
-      />
-      <Post
-        message="9221 hours: bad game, there's no real late game content"
-        likesCounter="321"
-      />
-      <Post
-        message="i would have never guessed heap for this problem lol"
-        likesCounter="21"
-      />
-      <Post message="but pooh, gotta be 1st to review it" likesCounter="1" />
-      <Post
-        message="i wonder if my friend's ex's game is for sale"
-        likesCounter="11"
-      />
-      <Post message="speaking of" likesCounter="1" />
+      {postsElements}
     </div>
   );
 };

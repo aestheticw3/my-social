@@ -16,21 +16,11 @@ const ChatUsers = () => {
     { name: "Jillian Hayward" },
   ];
 
-  return (
-    <aside className={styles.chatUsers}>
-      <ChatsUser name="Guinevere Rogers" />
-      <ChatsUser name="Clarissa Leonard" />
-      <ChatsUser name="Dominic Cobbett" />
-      <ChatsUser name="Jade Frost" />
-      <ChatsUser name="Patricia Beck" />
-      <ChatsUser name="Perry Rose" />
-      <ChatsUser name="Sienna Carter" />
-      <ChatsUser name="Clara Wintringham" />
-      <ChatsUser name="Aiken Tate" />
-      <ChatsUser name="Lesley Stanley" />
-      <ChatsUser name="Jillian Hayward" />
-    </aside>
-  );
+  let chatUsersElements = chatUsersData.map((chatUser) => (
+    <ChatsUser name={chatUser.name} />
+  ));
+
+  return <aside className={styles.chatUsers}>{chatUsersElements}</aside>;
 };
 
 export default ChatUsers;

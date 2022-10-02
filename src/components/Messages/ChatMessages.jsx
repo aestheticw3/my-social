@@ -2,13 +2,17 @@ import styles from "./ChatMessages.module.css";
 import ChatMessage from "./ChatMessage";
 
 const ChatMessages = () => {
-  return (
-    <div className={styles.chatMessages}>
-      <ChatMessage message="First message" />
-      <ChatMessage message="Second message" />
-      <ChatMessage message="Third message" />
-      <ChatMessage message="Fourth message" />
-    </div>
-  );
+  let chatMessagesDate = [
+    { message: "First message" },
+    { message: "Second message" },
+    { message: "Third message" },
+    { message: "Fourth message" },
+  ];
+
+  let chatMessagesElements = chatMessagesDate.map((chatMessage) => (
+    <ChatMessage message={chatMessage.message} />
+  ));
+
+  return <div className={styles.chatMessages}>{chatMessagesElements}</div>;
 };
 export default ChatMessages;

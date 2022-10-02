@@ -8,8 +8,8 @@ const Post = (props) => {
         src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
         alt="profile"
       />
-      <p className={styles.text}>{props.message}</p>
-      <div className={styles.likesCounter}>{props.likesCounter}</div>
+      <p className={styles.text}>{props.text}</p>
+      <div className={styles.likes}>{props.likes}</div>
     </div>
   );
 };
