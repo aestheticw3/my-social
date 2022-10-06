@@ -1,15 +1,8 @@
 import styles from "./ChatMessages.module.css";
 import ChatMessage from "./ChatMessage";
 
-const ChatMessages = () => {
-  let chatMessagesDate = [
-    { message: "First message" },
-    { message: "Second message" },
-    { message: "Third message" },
-    { message: "Fourth message" },
-  ];
-
-  let chatMessagesElements = chatMessagesDate.map((chatMessage) => (
+const ChatMessages = (props) => {
+  let chatMessagesElements = props.chatMessagesData.map((chatMessage) => (
     <ChatMessage message={chatMessage.message} />
   ));
 
