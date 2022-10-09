@@ -5,11 +5,7 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-      <Main
-        chatUsersData={props.chatUsersData}
-        chatMessagesData={props.chatMessagesData}
-        postsData={props.postsData}
-      />
+      <Main state={props.state} />
     </div>
   );
 }

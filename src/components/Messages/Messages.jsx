@@ -5,8 +5,8 @@ import styles from "./Messages.module.css";
 const Messages = (props) => {
   return (
     <div className={styles.messages}>
-      <ChatUsers chatUsersData={props.chatUsersData} />
-      <ChatMessages chatMessagesData={props.chatMessagesData} />
+      <ChatUsers chatUsersData={props.messagesData.chatUsersData} />
+      <ChatMessages chatMessagesData={props.messagesData.chatMessagesData} />
     </div>
   );
 };

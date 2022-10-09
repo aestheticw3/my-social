@@ -8,15 +8,13 @@ const Main = (props) => {
     <main className={styles.main}>
       <div className={styles.container}>
         <Routes>
-          <Route path="/" element={<Profile postsData={props.postsData} />} />
+          <Route
+            path="/"
+            element={<Profile profileData={props.state.profile} />}
+          />
           <Route
             path="/messages/*"
-            element={
-              <Messages
-                chatUsersData={props.chatUsersData}
-                chatMessagesData={props.chatMessagesData}
-              />
-            }
+            element={<Messages messagesData={props.state.messages} />}
           />
         </Routes>
       </div>
