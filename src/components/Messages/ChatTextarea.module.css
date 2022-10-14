@@ -1,0 +1,16 @@
+.textfield {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  width: 92%;
+  height: 80px;
+  background-color: #181818;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(40, 40, 40);
+  resize: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #fff;
+  outline: none;
+}

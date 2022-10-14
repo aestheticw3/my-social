@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Posts.module.css";
 import Post from "./Post";
 
@@ -6,10 +7,18 @@ const Posts = (props) => {
     <Post text={post.text} likes={post.likes} />
   ));
 
+  let newPostElement = React.createRef();
+
+  let addPost = () => {
+    let text = newPostElement.current.value;
+    alert(text);
+  };
+
   return (
     <div className={styles.posts}>
       <h2 className={styles.title}>My Posts</h2>
       <textarea
+        ref={newPostElement}
         className={styles.textfield}
         placeholder="Your News..."
         type="text"
@@ -20,7 +29,9 @@ const Posts = (props) => {
         tabindex="0"
         spellcheck="false"
       ></textarea>
-      <button className={styles.btn}>Send</button>
+      <button onClick={addPost} className={styles.btn}>
+        Send
+      </button>
       {postsElements}
     </div>
   );
