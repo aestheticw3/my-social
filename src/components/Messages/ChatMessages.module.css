@@ -6,3 +6,37 @@
   padding: 2% 3%;
   border: 1px solid rgb(40, 40, 40);
 }
+
+.textfield {
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  width: 81%;
+  height: 80px;
+  background-color: #181818;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgb(40, 40, 40);
+  resize: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: #fff;
+  outline: none;
+}
+
+.btn {
+  position: absolute;
+  border-radius: 10px;
+  bottom: 3%;
+  right: 4%;
+  color: aliceblue;
+  outline: none;
+  background-color: #181818;
+  border: 1px solid rgb(40, 40, 40);
+  padding: 31px 30px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
