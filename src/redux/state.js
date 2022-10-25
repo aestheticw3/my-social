@@ -1,4 +1,6 @@
-let state = {
+import { renderEntireTree } from "./../render";
+
+export let state = {
   profile: {
     postsData: [
       { text: "these people are friends of the devs", likes: 121 },
@@ -34,6 +36,23 @@ let state = {
       { message: "Fourth message" },
     ],
   },
+};
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    text: postMessage,
+    likes: 0,
+  };
+  state.profile.postsData.push(newPost);
+  renderEntireTree(state);
+};
+
+export let sendMessage = (messageText) => {
+  let newMessage = {
+    message: messageText,
+  };
+  state.messages.chatMessagesData.push(newMessage);
+  renderEntireTree(state);
 };
 
 export default state;

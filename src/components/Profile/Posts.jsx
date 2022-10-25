@@ -9,11 +9,6 @@ const Posts = (props) => {
 
   let newPostElement = React.createRef();
 
-  let addPost = () => {
-    let text = newPostElement.current.value;
-    alert(text);
-  };
-
   return (
     <div className={styles.posts}>
       <h2 className={styles.title}>My Posts</h2>
@@ -29,7 +24,12 @@ const Posts = (props) => {
         tabindex="0"
         spellcheck="false"
       ></textarea>
-      <button onClick={addPost} className={styles.btn}>
+      <button
+        onClick={() => {
+          props.addPost(newPostElement.current.value);
+        }}
+        className={styles.btn}
+      >
         Send
       </button>
       {postsElements}

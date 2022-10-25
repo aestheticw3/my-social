@@ -5,7 +5,11 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-      <Main state={props.state} />
+      <Main
+        state={props.state}
+        addPost={props.addPost}
+        sendMessage={props.sendMessage}
+      />
     </div>
   );
 }

@@ -9,11 +9,6 @@ const ChatMessages = (props) => {
 
   let messageText = React.createRef();
 
-  let sendMessage = () => {
-    let text = messageText.current.value;
-    alert(text);
-  };
-
   return (
     <div className={styles.chatMessages}>
       {chatMessagesElements}
@@ -29,7 +24,12 @@ const ChatMessages = (props) => {
         tabindex="0"
         spellcheck="false"
       ></textarea>
-      <button onClick={sendMessage} className={styles.btn}>
+      <button
+        onClick={() => {
+          props.sendMessage(messageText.current.value);
+        }}
+        className={styles.btn}
+      >
         Send
       </button>
     </div>

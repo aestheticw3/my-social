@@ -6,7 +6,10 @@ const Messages = (props) => {
   return (
     <div className={styles.messages}>
       <ChatUsers chatUsersData={props.messagesData.chatUsersData} />
-      <ChatMessages chatMessagesData={props.messagesData.chatMessagesData} />
+      <ChatMessages
+        chatMessagesData={props.messagesData.chatMessagesData}
+        sendMessage={props.sendMessage}
+      />
     </div>
   );
 };

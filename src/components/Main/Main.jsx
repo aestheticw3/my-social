@@ -10,11 +10,21 @@ const Main = (props) => {
         <Routes>
           <Route
             path="/"
-            element={<Profile profileData={props.state.profile} />}
+            element={
+              <Profile
+                profileData={props.state.profile}
+                addPost={props.addPost}
+              />
+            }
           />
           <Route
             path="/messages/*"
-            element={<Messages messagesData={props.state.messages} />}
+            element={
+              <Messages
+                messagesData={props.state.messages}
+                sendMessage={props.sendMessage}
+              />
+            }
           />
         </Routes>
       </div>
