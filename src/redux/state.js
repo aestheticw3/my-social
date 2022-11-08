@@ -13,6 +13,7 @@ export let state = {
       { text: "i wonder if my friend's ex's game is for sale", likes: 21 },
       { text: "speaking of", likes: 10 },
     ],
+    newPostText: "blablabla",
   },
   messages: {
     chatUsersData: [

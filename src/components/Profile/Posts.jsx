@@ -23,6 +23,7 @@ const Posts = (props) => {
         name="post-text"
         tabindex="0"
         spellcheck="false"
+        value={props.newPostText}
       ></textarea>
       <button
         onClick={() => {
